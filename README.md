@@ -1,50 +1,46 @@
 This project is based on a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-To start development, the app was first created and then tested on a physical Android device. Works great! This is just the default React Native app.
+This is just the default React Native app.
 
-# Getting Started
+Make sure you can build a regular React Native app (the simplest possible example is fine) before proceeding.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Next, follow the instructions by [Kumar Harsh](https://blog.logrocket.com/complete-guide-react-native-web/) under the section "Adding React Native web support using CRA".
 
-## Step 1: Start the Metro Server
-
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
-
-To start Metro, run the following command from the _root_ of your React Native project:
-
-```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
+```
+mkdir public
+touch public/index.html
 ```
 
-## Step 2: Start your Application
+After doing this, make sure that your index.html file looks like the one in this project or at [create-react-app](https://github.com/facebook/create-react-app/blob/main/packages/cra-template/template/public/index.html) which is where I got mine.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
+```
+npm install react-native-web react-scripts react-dom
 ```
 
-### For iOS
+In root of project, do:
 
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+```
+mv index.js index.native.js
+mkdir src
+touch src/index.js
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Make sure your `src/index.js` looks like the one in this project, which points to `src/App.js`. Notice that we're skipping over the default `App.tsx`.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+Edit `index.native.js` to look like the one in this project.
 
+Add scripts (if desired) to `package.json`.
+
+## Running on Web
+
+Running `npm run web` just worked for me at this point. View the app in your browser at localhost:3000.
+
+## Running on Android
+
+Just do:
+
+```
+npx react-native run-android
+```
+
+Worked for me.
