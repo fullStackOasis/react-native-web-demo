@@ -1,3 +1,19 @@
+This is a primer for using react-native-web to build a web client from your React Native project.
+
+If you've got an existing React Native project, you **may** be able to compare this project with yours to figure out how (and if) you can turn your project into a web application.
+
+In this case, we're starting with the default sample React Native project, and copying some demo code over from another demo.
+
+The app runs on Android in development mode (with Metro server), as an apk, and also as a web application.
+
+## The demo
+
+A quick explanation of the demo: when running the usual `npx react-native@latest init AwesomeProject`, you'll get a very simple demo application.
+
+The tutorials that I found for `react-native-web` used a demo that has a button you can tap to generate (and display) a new random number. I went with that to keep things as simple as possible during my journey into `react-native-web`. YMMV.
+
+## Starting out
+
 This project is based on a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 This is just the default React Native app.
