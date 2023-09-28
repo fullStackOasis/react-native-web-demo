@@ -52,3 +52,11 @@ npx react-native run-android
 ```
 
 Worked for me.
+
+## Build your apk
+
+```
+cd android
+./gradlew clean
+./gradlew assembleRelease
+```
