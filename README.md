@@ -39,6 +39,14 @@ Running `npm run web` just worked for me at this point. View the app in your bro
 
 Just do:
 
+(In one terminal)
+
+```
+npx react-native start
+```
+
+(In second terminal)
+
 ```
 npx react-native run-android
 ```
