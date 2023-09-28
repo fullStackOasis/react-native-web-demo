@@ -1,3 +1,5 @@
+[This is where this repo came from.](https://github.com/fullStackOasis/react-native-web-demo) 👋 I'm Marya of fullStackOasis. Need mobile development work? Hit me up at fullstackdev@fullstackoasis.com.
+
 This is a primer for using react-native-web to build a web client from your React Native project.
 
 If you've got an existing React Native project, you **may** be able to compare this project with yours to figure out how (and if) you can turn your project into a web application.
